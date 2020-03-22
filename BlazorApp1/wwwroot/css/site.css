@@ -1,7 +1,7 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: Ubuntu, Helvetica, Arial, sans-serif;
 }
 
 a, .btn-link {
@@ -43,18 +43,21 @@ app {
 
 .main .top-row a:first-child {
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: inherit;
 }
 
 .sidebar {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background-image: linear-gradient(45deg, #00aeef 0%, #2d388a 70%);
 }
 
-    .sidebar .top-row {
-        background-color: rgba(0,0,0,0.4);
+    .sidebar .top-row  {
+        background-color: rgba(0,0,0,0.3);
     }
-
-    .sidebar .navbar-brand , span {
+    .sidebar .navbar-brand {
+        color: #eee !important;
+        font-weight:700;
+    }
+    .sidebar .navbar-brand, span {
         font-size: 2rem !important;
     }
 
@@ -103,9 +106,12 @@ app {
             }
 
 .content {
-    padding-top: 1.1rem;
+    padding-top: 1.5rem;
 }
-
+#menu {
+    justify-self:flex-end;
+    text-align:end;
+}
 .navbar-toggler {
     background-color: rgba(255, 255, 255, 0.1);
 }

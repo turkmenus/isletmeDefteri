@@ -1,9 +1,11 @@
 ﻿<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">
-        <span class="oi oi-book"></span> İŞLETME DEFTERİ</a>
-    <button class="navbar-toggler" @onclick="ToggleNavMenu">
-        <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler btn btn-outline-light" id="menu" @onclick="ToggleNavMenu">
+        <span class="oi oi-menu"></span>
     </button>
+    <a class="navbar-brand" href="">
+        <span class="oi oi-book"></span> İŞLETME DEFTERİ
+    </a>
+
 </div>
 
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
