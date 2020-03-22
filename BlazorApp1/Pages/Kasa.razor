@@ -1,24 +1,54 @@
 ﻿@page "/kasa"
-<div class="container-fluid"> 
-        <ul class="nav nav-tabs nav-justified" role="tablist">
-            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Satış İşlemleri</a></li>
-            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Para Çıkışı</a></li>
-            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Günsonu Raporu</a></li>
+    <div class="">
+
+        <ul class="nav nav-pills nav-fill" role="tablist">
+
+            <li scope="col" role="presentation" class="active" id="deneme">
+                <a href="#sales" aria-controls="home" role="tab" data-toggle="tab">
+                    <table>
+                        <td>
+                            <span class="fas fa-file-invoice-dollar" style="font-size:3rem !important; padding-right:1rem; vertical-align:auto;"></span>
+                        </td>
+                        <td>Satış <p>İşlemleri </p></td>
+                    </table>
+                    
+                </a>
+            </li>
+            <li scope="col" role="presentation">
+            <a href="#moneyout" aria-controls="profile" role="tab" data-toggle="tab">
+                <table>
+                    <td>
+                        <span class="fas fa-file-invoice-dollar" style="font-size:3rem !important; padding-right:1rem; vertical-align:auto;"></span>
+                    </td>
+                    <td> Para <p>Çıkışı</p></td>
+                </table>   
+             </a>
+            </li>
+            <li scope="col" role="presentation">
+                <a href="#dailyreport" aria-controls="messages" role="tab" data-toggle="tab">
+                    <table>
+                        <td>
+                            <span class="fas fa-file-invoice-dollar" style="font-size:3rem !important; padding-right:1rem; vertical-align:auto;"></span>
+                        </td>
+                        <td>Günsonu <p> Raporu</p></td>
+                    </table>                    
+                </a>
+            </li>
         </ul>
 
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="home">Satış İşlemleri Sayfası</div>
-            <div role="tabpanel" class="tab-pane" id="profile">Para Çıkışı Sayfası </div>
-            <div role="tabpanel" class="tab-pane" id="messages">Günsonu Raporu Sayfası</div>
-        </div>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="sales"><Sales /></div>
+                <div role="tabpanel" class="tab-pane" id="moneyout"><MoneyOut /> </div>
+                <div role="tabpanel" class="tab-pane" id="dailyreport"><DailyReport /></div>
+            </div>
 
 
 
 
 
 
-</div>
+    </div>
 @code {
 
 }

@@ -165,9 +165,12 @@ app {
     }
 }
 
+span #deneme {
+    font-size:2em;
+}
 @media (min-width: 768px) {
     app {
-        flex-direction: row;
+        flex-direction:unset;
     }
 
     .sidebar {
@@ -194,5 +197,10 @@ app {
     .sidebar .collapse {
         /* Never collapse the sidebar for wide screens */
         display: block;
+    }
+}
+@media (max-width: 768px) {
+    app {
+        flex-direction: column;
     }
 }
