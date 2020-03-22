@@ -1,33 +1,25 @@
 ﻿@page "/kasa"
+    <!-- <div class="container"> -->
+<ul class="nav nav-tabs nav-justified" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Satış İşlemleri</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Para Çıkışı</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Günsonu Raporu</a></li>
+</ul>
 
-    <ul class="nav nav-tabs">
-        <!---
-      <h3>Kasa işlemleri</h3>
-    --->
-        <li class="nav-item">
-            <a class="nav-link disabled" href="kasa" tabindex="-1">Kasa işlemleri</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" href="kasa">Satış</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="kasa">Para Çıkışı</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="kasa">Günsonu</a>
-        </li>
-        
-    </ul>
-<div class="container-sm">
-
-
-
-
-
-
-
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">Satış İşlemleri Sayfası</div>
+    <div role="tabpanel" class="tab-pane" id="profile">Para Çıkışı Sayfası </div>
+    <div role="tabpanel" class="tab-pane" id="messages">Günsonu Raporu Sayfası</div>
 </div>
+
+
+
+
+
+
+<!--</div>-->
 @code {
-     
+
 }
-            
+

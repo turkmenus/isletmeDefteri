@@ -31,14 +31,14 @@ app {
 }
 
     .main .top-row {
-        background-color: #f7f7f7;
+        background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
         border-bottom: 1px solid #d6d5d5;
         justify-content: flex-end;
     }
 
         .main .top-row > a, .main .top-row .btn-link {
             white-space: nowrap;
-            margin-left: 1.5rem;
+            margin-left: 1.5rem !important;
         }
 
 .main .top-row a:first-child {
@@ -54,22 +54,27 @@ app {
         background-color: rgba(0,0,0,0.4);
     }
 
-    .sidebar .navbar-brand {
-        font-size: 1.1rem;
+    .sidebar .navbar-brand , span {
+        font-size: 2rem !important;
     }
 
     .sidebar .oi {
         width: 2rem;
         font-size: 1.1rem;
-        vertical-align: text-top;
+        vertical-align: middle;
         top: -2px;
     }
 
     .sidebar .nav-item {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
         padding-bottom: 0.5rem;
+        margin-left: -2rem;
+        padding-right: 2rem;
     }
-
+    .sidebar .nav-item span {
+        margin-right: 1rem;
+        margin-left:2rem;
+    }
         .sidebar .nav-item:first-of-type {
             padding-top: 1rem;
         }
@@ -80,8 +85,8 @@ app {
 
         .sidebar .nav-item a {
             color: #d7d7d7;
-            border-radius: 4px;
-            height: 3rem;
+            border-radius: 31px;
+            height: 4rem;
             display: flex;
             align-items: center;
             line-height: 3rem;
@@ -139,6 +144,10 @@ app {
 @media (max-width: 767.98px) {
     .main .top-row:not(.auth) {
         display: none;
+    }
+    .main > div {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
     }
 
     .main .top-row.auth {
